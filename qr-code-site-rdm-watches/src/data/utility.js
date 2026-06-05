@@ -32,14 +32,17 @@ export default infoSocial;
 export const imgCarouselProfile = [
   {
     image: ThirdImageSlide,
-    p: "RDM WATCHES nasce a Napoli, da Raffaele",
-  },
-  {
-    image: SecondImageSlide,
-    p: "RDM Watches è specializzato nella compravendita di orologi di lusso",
+    h1: "Dove il tempo incontra l’eccellenza",
+    p: "RDM Watches nasce nel cuore di Napoli, guidata da Raffaele",
   },
   {
     image: FirstImageSlide,
-    p: "Il suo obiettivo è quello di curare le collezioni dei clienti al fine di arricchirle con i segnatempo più rari, esclusivi e validi in termini di investimento futuro.",
+    h1: "Passione, competenza, autenticità",
+    p: "Ogni orologio è scelto con occhio esperto, garantendo solo pezzi autentici e di valore.",
+  },
+  {
+    image: SecondImageSlide,
+    h1: "La firma di un professionista",
+    p: "Con professionalità e trasparenza, Raffaele assicura sicurezza totale: dalla scelta alla consegna assicurata.",
   },
 ];

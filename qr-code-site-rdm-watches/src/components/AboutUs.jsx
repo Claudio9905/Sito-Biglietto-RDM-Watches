@@ -56,10 +56,14 @@ const AboutUs = () => {
             }}
           />
         </AnimatePresence>
-        <div id="div_content" className="position-absolute">
-          <p className={`carousel-text ${animateText ? "fade" : ""}`}>
-            {imgCarouselProfile[currentIndex].p}
-          </p>
+        <div
+          id="div_content"
+          className={`carousel-text position-absolute ${animateText ? "fade" : ""}`}
+        >
+          {imgCarouselProfile[currentIndex].h1 && (
+            <h1>{imgCarouselProfile[currentIndex].h1}</h1>
+          )}
+          <p>{imgCarouselProfile[currentIndex].p}</p>
         </div>
       </div>
     </>
