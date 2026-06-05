@@ -13,6 +13,10 @@ Inoltre, sono presenti alcuni caroselli, prendendo come modelli di esempio quell
 <img width="363" height="693" alt="Screenshot 2026-06-05 150950" src="https://github.com/user-attachments/assets/27d61a40-6b6b-4df9-9267-06576dce2be9" />
 <img width="362" height="669" alt="Screenshot 2026-06-05 151000" src="https://github.com/user-attachments/assets/ddc31757-b821-42fd-a694-30b9d4e583d4" />
 
+# Codice QR code per la scansione
+<img width="2257" height="2257" alt="qr-code-rdm" src="https://github.com/user-attachments/assets/64d89fca-e2a4-41f7-9453-0f62fa62fba8" />
+
+
 # Tecnologie e linguaggi usati nel lato Front-End:
 
 - HTML5, CSS3, JAVASCRIPT
@@ -20,3 +24,4 @@ Inoltre, sono presenti alcuni caroselli, prendendo come modelli di esempio quell
 - REACT 
 
 Hoisting : Netfly --- > link del sito  https://rdm-watches-info.netlify.app/
+
