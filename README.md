@@ -13,8 +13,7 @@ Inoltre, sono presenti alcuni caroselli, prendendo come modelli di esempio quell
 <img width="363" height="693" alt="Screenshot 2026-06-05 150950" src="https://github.com/user-attachments/assets/27d61a40-6b6b-4df9-9267-06576dce2be9" />
 <img width="362" height="669" alt="Screenshot 2026-06-05 151000" src="https://github.com/user-attachments/assets/ddc31757-b821-42fd-a694-30b9d4e583d4" />
 
-|-----------------------------------------------------|
-Tecnologie e linguaggi usati nel lato Front-End:
+# Tecnologie e linguaggi usati nel lato Front-End:
 
 - HTML5, CSS3, JAVASCRIPT
 - FRAMEWORK BOOTSTRAP
