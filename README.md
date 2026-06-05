@@ -4,7 +4,7 @@ in modo da avere sempre, a portata di mano, il contatto con l'azienda.
 
 # Struttura
 L'app presente principalmemnte i contatti, tra link del sito principale dell'azienda, link dei social, link di Google Maps per la posizione GPS
-<img width="437" height="813" alt="Screenshot 2026-06-05 150803" src="https://github.com/user-attachments/assets/613f1ede-7633-41ba-8d9e-b3879c8a817c" />
+<img width="200" height="200" alt="Screenshot 2026-06-05 150803" src="https://github.com/user-attachments/assets/613f1ede-7633-41ba-8d9e-b3879c8a817c" />
 <img width="427" height="814" alt="Screenshot 2026-06-05 150814" src="https://github.com/user-attachments/assets/64f0c8af-2497-45fd-b5c8-06495f80a2d7" />
 <img width="447" height="810" alt="Screenshot 2026-06-05 150821" src="https://github.com/user-attachments/assets/43c8b1a9-0a74-49d1-940c-a3ec9804f450" />
 <img width="427" height="804" alt="Screenshot 2026-06-05 150830" src="https://github.com/user-attachments/assets/9258dbb8-629c-48f9-b29b-20236ff96e25" />
