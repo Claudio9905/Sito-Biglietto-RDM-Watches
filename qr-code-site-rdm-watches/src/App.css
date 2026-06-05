@@ -1,0 +1,1104 @@
+body {
+  /* background-color: black !important; */
+  display: flex;
+  font-family: "Bebas Neue", sans-serif !important;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  /* background-image: linear-gradient(309deg, #000000d4, #faebbbbf); */
+  /* background-image: url("./assets/18012955889422731-s-80-400.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat; */
+  /* box-shadow: inset 0 -775px 20px 1px black; */
+  /* background-position: center; */
+}
+
+html,
+body {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+/* * {
+  outline: 1px solid red;
+} */
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/* CSS del componente IntroCard */
+
+#row-watch-contacts {
+  background-image: url("./assets/Banner_Shop_RDM2.jpg");
+  background-attachment: fixed;
+  background-size: 100% 100vh;
+  background-repeat: no-repeat;
+  padding: 3em;
+  position: relative;
+  &::after {
+    content: " ";
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.281);
+  }
+}
+
+#col-logo {
+  padding: 0.5em;
+  background-color: rgba(206, 204, 204, 0.225);
+  backdrop-filter: blur(15px);
+  border-radius: 100px;
+  margin-bottom: 3em;
+  box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.446);
+  border: 1px solid rgba(255, 255, 255, 0.407);
+  z-index: 5;
+}
+
+@keyframes rotateLuxury {
+  from {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  to {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+
+@keyframes glowPulse {
+  0%,
+  100% {
+    box-shadow: 0 0 10px rgba(212, 175, 55, 0.2);
+  }
+  50% {
+    box-shadow: 0 0 25px rgba(212, 175, 55, 0.6);
+  }
+}
+
+@keyframes breathingLight {
+  0%,
+  100% {
+    filter: brightness(1);
+  }
+  50% {
+    filter: brightness(1.2);
+  }
+}
+
+@keyframes metalShine {
+  0% {
+    background-position: -200px;
+  }
+  100% {
+    background-position: 200px;
+  }
+}
+
+@keyframes microMove {
+  0%,
+  100% {
+    transform: translateX(-50%) translateY(0px);
+  }
+  50% {
+    transform: translateX(-50%) translateY(2px);
+  }
+}
+
+#div-logo {
+  display: flex;
+  margin-left: 2em;
+  align-items: center;
+  transition: all 0.3s ease-in-out;
+}
+
+/* #div-circle-logo { */
+/* width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  border: 8px solid rgba(133, 132, 132, 0.646);
+  background-color: rgba(27, 27, 27, 0.891);
+  transition: all 0.3s ease-in-out;
+  backdrop-filter: blur(10px);
+  z-index: 2; */
+
+/* width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: radial-gradient(circle at 30% 30%, #3a3a3a, #0f0f0f 70%);
+  border: 6px solid #d4af37;
+  box-shadow:
+    0 0 0 4px rgba(212, 175, 55, 0.25),
+    0 10px 25px rgba(0, 0, 0, 0.6),
+    inset 0 2px 6px rgba(255, 255, 255, 0.15),
+    inset 0 -4px 10px rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(6px);
+  z-index: 5;
+  animation: breathingLight 4s ease-in-out infinite; */
+/* } */
+
+/* #div-bracelet1 { */
+/* width: 170px;
+  height: 170px;
+  border-radius: 50%;
+  border: 7px solid rgba(209, 188, 34, 0.966);
+  position: absolute;
+  transition: all 0.3s ease-in-out;
+  z-index: 2; */
+
+/* width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 10px solid transparent;
+  background: conic-gradient(from 0deg, #d4af37, #f5e6a8, #c9a227, #d4af37);
+  -webkit-mask: radial-gradient(circle, transparent 60%, black 61%);
+  mask: radial-gradient(circle, transparent 60%, black 61%);
+  filter: blur(0.5px);
+  z-index: 3;
+  animation: rotateLuxury 12s linear infinite; */
+/* } */
+
+/* #div-bracelet2 { */
+/* width: 200px;
+  height: 200px;
+  border: 3px solid rgb(223 223 223 / 63%);
+  position: absolute;
+  background-color: rgb(182 182 182);
+  border-bottom: none;
+  bottom: -4.8em;
+  left: 6em;
+  transform: rotate(90deg);
+  z-index: 1;
+  transition: all 0.3s ease-in-out; */
+
+/* width: 210px; */
+/* height: 210px; */
+/* border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 2px solid rgba(255, 255, 255, 0.15);
+  box-shadow:
+    0 0 15px rgba(212, 175, 55, 0.25),
+    inset 0 0 10px rgba(255, 255, 255, 0.08);
+  z-index: 2;
+  animation: glowPulse 3s ease-in-out infinite; */
+/* } */
+
+/* #div-bracelet3 { */
+/* width: 90px;
+  height: 190px;
+  border: 3px solid rgb(223 223 223 / 63%);
+  position: absolute;
+  background-color: rgb(182 182 182);
+  border-bottom: none;
+  bottom: -4.8em;
+  right: 6em;
+  transform: rotate(90deg);
+  z-index: 1;
+  transition: all 0.3s ease-in-out;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 110%;
+  height: 55px;
+  border-radius: 12px;
+  background: linear-gradient(
+    90deg,
+    rgba(230, 230, 230, 0.85),
+    rgba(255, 255, 255, 0.95),
+    rgba(210, 210, 210, 0.85)
+  );
+  box-shadow:
+    0 8px 20px rgba(0, 0, 0, 0.35),
+    inset 0 2px 4px rgba(255, 255, 255, 0.7),
+    inset 0 -2px 6px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(10px);
+  z-index: 1;
+  animation: metalShine 3s linear infinite; */
+
+/* position: absolute;
+  top: 50%;
+  left: 11em;
+  transform: translate(-50%, -50%);
+
+  width: 10em;
+  height: 85px;
+  border-radius: 14px; */
+
+/* acciaio spazzolato */
+/* background: linear-gradient(180deg, #2a2a2a, #444, #2a2a2a);
+
+  box-shadow:
+    0 12px 25px rgba(0, 0, 0, 0.5),
+    inset 0 2px 4px rgba(255, 255, 255, 0.2),
+    inset 0 -4px 8px rgba(0, 0, 0, 0.6);
+
+  overflow: hidden;
+  z-index: 1;
+
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+
+    background: repeating-linear-gradient(
+      90deg,
+      rgba(255, 255, 255, 0.08) 0px,
+      rgba(255, 255, 255, 0.08) 2px,
+      transparent 2px,
+      transparent 28px
+    ); */
+
+/* effetto profondità maglie */
+/* box-shadow:
+      inset 0 1px 2px rgba(255, 255, 255, 0.2),
+      inset 0 -2px 4px rgba(0, 0, 0, 0.5);
+
+    opacity: 0.6;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+
+    background: linear-gradient(
+      120deg,
+      transparent 20%,
+      rgba(255, 255, 255, 0.4) 40%,
+      transparent 60%
+    );
+
+    background-size: 200%;
+    animation: strapShine 4s linear infinite;
+  } */
+/* } */
+
+/* #div-bracelet4 { */
+/* position: absolute;
+  top: 50%;
+  right: 1em;
+  transform: translate(-50%, -50%);
+
+  width: 10em;
+  height: 85px;
+  border-radius: 14px; */
+
+/* acciaio spazzolato */
+/* background: linear-gradient(180deg, #2a2a2a, #444, #2a2a2a);
+
+  box-shadow:
+    0 12px 25px rgba(0, 0, 0, 0.5),
+    inset 0 2px 4px rgba(255, 255, 255, 0.2),
+    inset 0 -4px 8px rgba(0, 0, 0, 0.6);
+
+  overflow: hidden;
+  z-index: 1;
+
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+
+    background: repeating-linear-gradient(
+      90deg,
+      rgba(255, 255, 255, 0.08) 0px,
+      rgba(255, 255, 255, 0.08) 2px,
+      transparent 2px,
+      transparent 28px
+    ); */
+
+/* effetto profondità maglie */
+/* box-shadow:
+      inset 0 1px 2px rgba(255, 255, 255, 0.2),
+      inset 0 -2px 4px rgba(0, 0, 0, 0.5);
+
+    opacity: 0.6;
+  } */
+
+/* &::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+
+    background: linear-gradient(
+      120deg,
+      transparent 20%,
+      rgba(255, 255, 255, 0.4) 40%,
+      transparent 60%
+    );
+
+    background-size: 200%;
+    animation: strapShine 4s linear infinite;
+  } */
+/* } */
+
+@keyframes strapShine {
+  from {
+    background-position: -200%;
+  }
+  to {
+    background-position: 200%;
+  }
+}
+
+/* #div-gear { */
+/* width: 2em;
+  height: 2em;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  position: absolute;
+  background-color: rgb(182 182 182);
+  border: 3px solid rgb(223 223 223 / 63%);
+  right: 0em;
+  transform: rotate(270deg);
+  top: 5.4em;
+
+  width: 40px;
+  height: 25px;
+
+  position: absolute;
+  bottom: 35px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  border-radius: 6px;
+
+  background: linear-gradient(180deg, #d4af37, #a67c00);
+
+  box-shadow:
+    0 4px 10px rgba(0, 0, 0, 0.5),
+    inset 0 2px 3px rgba(255, 255, 255, 0.4),
+    inset 0 -2px 4px rgba(0, 0, 0, 0.4);
+
+  z-index: 4;
+  animation: microMove 2s ease-in-out infinite; */
+/* } */
+
+/* #div-hour1 {
+  width: 3px;
+  height: 15px;
+  background-color: rgba(255, 255, 255, 0.997);
+  position: absolute;
+  bottom: 2.7em;
+  right: 5em;
+  transform: rotateZ(131deg);
+  z-index: 3;
+}
+
+#div-hour2 {
+  width: 3px;
+  height: 15px;
+  background-color: rgba(255, 255, 255, 0.997);
+  position: absolute;
+  bottom: 4.4em;
+  right: 3.4em;
+  transform: rotateZ(142deg);
+  z-index: 3;
+}
+
+#div-hour3 {
+  width: 3px;
+  height: 15px;
+  background-color: rgba(255, 255, 255, 0.997);
+  position: absolute;
+  bottom: 5em;
+  right: 1em;
+  transform: rotateZ(180deg);
+  z-index: 3;
+} */
+
+#button-link-sito-main {
+  width: 100%;
+  background-color: rgb(28 27 27 / 78%);
+  border-radius: 30px;
+  backdrop-filter: blur(15px);
+  border-color: rgba(255, 255, 255, 0.408);
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.458);
+
+  &::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 30px;
+
+    background: linear-gradient(
+      120deg,
+      transparent 20%,
+      rgba(255, 255, 255, 0.4) 40%,
+      transparent 60%
+    );
+
+    background-size: 200%;
+    animation: strapShine 4s linear infinite;
+  }
+}
+
+@keyframes enter-description {
+  0% {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+#p-description {
+  font-family: "Playfair Display", serif;
+  font-size: 1.7em;
+  text-shadow: 0px 0px 10px rgba(19, 18, 18, 0.787);
+  animation: enter-description 1s ease-in-out 0s 1 normal none;
+}
+
+/* CSS del componente Contatti */
+
+#container-contacts {
+  width: 21em;
+  height: auto;
+  margin-top: 2em;
+  padding: 0.5em;
+  backdrop-filter: blur(15px);
+  background-color: rgba(206, 204, 204, 0.225);
+  border-radius: 50px;
+  box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.446);
+  border: 1px solid rgba(255, 255, 255, 0.407);
+  transition: all 0.3s ease-in-out;
+  z-index: 5;
+}
+
+#row-contacts {
+  padding: 1em;
+  /* border-top: 2px solid rgba(255, 255, 255, 0.666); */
+}
+
+#link-whatsapp {
+  display: flex;
+  width: 12em;
+  gap: 1em;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid white;
+  border-radius: 30px;
+  padding: 0.4em;
+  background-image: linear-gradient(45deg, #415f2a, #68cd6ab9);
+  box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.17);
+  & #link-whatsapp-svg {
+    width: 1.4em;
+    margin-left: 0.3em;
+  }
+
+  & #number-phone-whatsapp {
+    font-size: 1em;
+    color: white;
+  }
+}
+
+#map-location {
+  border-radius: 100px;
+  border: 2px solid rgba(255, 255, 255, 0.407);
+  transition: all 0.3s ease-in-out;
+  margin-top: 1em;
+  &:hover {
+    border-color: rgba(255, 255, 255, 0.7);
+    box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.446);
+    transform: scale(1.1);
+    transition: all 0.3s ease-in-out;
+  }
+}
+
+@keyframes enter-icons-link {
+  0% {
+    opacity: 0;
+    transform: translateX(-10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+#icon-facebook {
+  width: 2.3em;
+  border: none;
+  background: none;
+  font-size: 1.5em;
+  transition: all 0.3s ease-in-out;
+  &:hover {
+    color: rgba(255, 255, 255, 0.7);
+    /* transform: scale(1.2); */
+    transition: all 0.3s ease-in-out;
+  }
+  animation: enter-icons-link 1s cubic-bezier(0.5, 0, 0, 1) 0s 1 normal none;
+}
+
+#icon-tiktok {
+  width: 2.3em;
+  border: none;
+  background: none;
+  font-size: 1.5em;
+  transition: all 0.3s ease-in-out;
+  &:hover {
+    color: rgba(255, 255, 255, 0.7);
+    /* transform: scale(1.2); */
+    transition: all 0.3s ease-in-out;
+  }
+  animation: enter-icons-link 1s cubic-bezier(0.5, 0, 0, 1) 0s 1 normal none;
+}
+
+#icon-instagram {
+  width: 2.3em;
+  border: none;
+  background: none;
+  font-size: 1.5em;
+  transition: all 0.3s ease-in-out;
+  &:hover {
+    color: rgba(255, 255, 255, 0.7);
+    /* transform: scale(1.2); */
+    transition: all 0.3s ease-in-out;
+  }
+  animation: enter-icons-link 1s cubic-bezier(0.5, 0, 0, 1) 0s 1 normal none;
+}
+
+.icon-link-svg {
+  box-shadow: 0px 0px 5px 2px rgba(255, 255, 255, 0.644);
+  border-radius: 100%;
+  transition: all 0.3s ease-in-out;
+}
+
+.icon-instagram-active {
+  transform: scale(1.2);
+  transition: all 0.3s ease-in-out;
+}
+.icon-facebook-active {
+  transform: scale(1.2);
+  transition: all 0.3s ease-in-out;
+}
+.icon-tiktok-active {
+  transform: scale(1.2);
+  transition: all 0.3s ease-in-out;
+}
+
+@keyframes animation-col-review {
+  0% {
+    opacity: 0;
+    transform: translateX(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+#row-embed-link {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  transition: all 0.3s ease-in-out;
+
+  & #col-link-preview {
+    transition: all 0.3s ease-in-out;
+    border-top: 1px solid rgba(255, 255, 255, 0.407);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.407);
+    animation: animation-col-review 1s cubic-bezier(0.5, 0, 0, 1) 0s 1 forwards;
+  }
+}
+
+/* CSS del componente LinkSocialPreview */
+
+#div-link-preview {
+  border: 1px solid rgba(255, 255, 255, 0.407);
+  margin-top: 1em;
+  margin-bottom: 1em;
+  padding: 0.5em;
+  border-radius: 20%;
+  background-image: linear-gradient(26deg, #a46f34, #bb3271);
+  box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.17);
+  transition: all 0.3s ease-in-out;
+}
+#div-link-preview-instagram {
+  border: 1px solid rgba(255, 255, 255, 0.407);
+  margin-top: 1em;
+  margin-bottom: 1em;
+  padding: 0.5em;
+  border-radius: 20%;
+  background-image: linear-gradient(26deg, #a46f34, #bb3271);
+  box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.17);
+  transition: all 0.3s ease-in-out;
+}
+
+#div-link-preview-facebook {
+  border: 1px solid rgba(255, 255, 255, 0.407);
+  margin-top: 1em;
+  margin-bottom: 1em;
+  padding: 0.5em;
+  border-radius: 20%;
+  background-image: linear-gradient(26deg, #3b5998, #8b9dc3);
+  box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.17);
+  transition: all 0.3s ease-in-out;
+}
+
+#div-link-preview-tiktok {
+  border: 1px solid rgba(255, 255, 255, 0.407);
+  margin-top: 1em;
+  margin-bottom: 1em;
+  padding: 0.5em;
+  border-radius: 20%;
+  background-image: linear-gradient(26deg, #69c9d0, #ee1d52);
+  box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.17);
+  transition: all 0.3s ease-in-out;
+}
+
+#div-img-profile {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  border: 5px solid rgba(255, 255, 255, 0.407);
+  background-size: cover;
+  background-position: center;
+  transition: all 0.3s ease-in-out;
+  & #img-profile {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    transition: all 0.3s ease-in-out;
+  }
+}
+
+.arrowLink {
+  position: absolute;
+  top: 1.3em;
+  left: 0.9em;
+  font-size: 1.2em;
+  color: rgba(255, 255, 255, 0.739);
+  transition: all 0.3s ease-in-out;
+}
+
+@keyframes downArrow {
+  0% {
+    opacity: 0;
+    transform: rotate(0deg);
+  }
+  100% {
+    opacity: 1;
+    transform: rotate(-180deg) translateY(-28px);
+  }
+}
+
+@keyframes upArrow {
+  0% {
+    opacity: 0;
+    transform: rotate(180deg);
+  }
+
+  100% {
+    opacity: 1;
+    transform: rotate(0deg) translateY(8px);
+  }
+}
+
+#upArrow {
+  animation: upArrow 0.2s cubic-bezier(0.5, 0, 0, 1) 0s 1 forwards;
+}
+
+#downArrow {
+  animation: downArrow 0.2s cubic-bezier(0.5, 0, 0, 1) 0s 1 forwards;
+}
+
+#n-follower {
+  font-family: "Playfair Display", serif;
+  text-shadow: 0px 0px 10px rgba(19, 18, 18, 0.475);
+  font-size: 0.9em;
+  font-weight: bold;
+}
+
+/* @keyframes buttonLinkAnimation {
+  0% {
+  }
+} */
+
+#button-link {
+  margin-top: 0.5em;
+  padding: 0.5em;
+  border-radius: 20px;
+  border: none;
+  background-color: rgba(255, 255, 255, 0.407);
+  color: black;
+  /* font-weight: bold; */
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  &:hover {
+    background-color: rgba(255, 255, 255, 0.7);
+    transform: scale(1.1);
+    transition: all 0.3s ease-in-out;
+  }
+}
+
+#row-description {
+  z-index: 5;
+  margin-top: 3em;
+}
+
+/* CSS del componente AboutUs */
+
+@keyframes scrolling-content {
+  0% {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  0% {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+}
+
+#carousel_container {
+  position: relative;
+  overflow: hidden;
+  height: 80vh;
+  width: 100%;
+  margin-bottom: 2em;
+
+  & #div_content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 2em;
+    z-index: 5;
+    transition: all 0.6s cubic-bezier(0.5, 0, 0, 1);
+
+    & p {
+      text-align: center;
+      color: white;
+      letter-spacing: 2px;
+      position: relative;
+      padding: 1em;
+      top: 5em;
+      margin-bottom: 0;
+      font-size: 1.6em;
+
+      &::after {
+        content: " ";
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        width: 100%;
+        height: 100%;
+        border: 1px solid rgba(255, 255, 255, 0.607);
+
+        border-top-left-radius: 30px;
+        border-top-right-radius: 30px;
+        border-left: none;
+        border-right: none;
+        border-bottom: none;
+        backdrop-filter: blur(15px);
+      }
+    }
+  }
+
+  &::after {
+    content: " ";
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(354deg, black, transparent);
+  }
+}
+
+.carousel-text {
+  opacity: 1;
+  transform: translateY(0);
+  transition:
+    opacity 1s cubic-bezier(0.5, 0, 0, 1),
+    transform 1s cubic-bezier(0.5, 0, 0, 1);
+}
+
+.carousel-text.fade {
+  opacity: 0;
+  transform: translateY(100px);
+  transition: all 0.3s cubic-bezier(0.5, 0, 0, 1);
+}
+
+.card-slide {
+  min-width: 100%;
+  & img {
+    object-fit: contain;
+    width: 100%;
+  }
+}
+
+/* CSS del componente CaroselloWatch */
+
+#container-carousel {
+  margin-top: 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.carousel {
+  border-left: 2px solid rgba(255, 255, 255, 0.607);
+  border-right: 2px solid rgba(255, 255, 255, 0.579);
+  margin: 0 auto;
+  gap: 20px;
+  padding: 20px 0;
+  width: 26em;
+  overflow: hidden;
+  display: flex;
+  > * {
+    flex: 0 0 100%;
+  }
+  /* &:hover .group {
+    animation-play-state: paused;
+  } */
+}
+
+.card {
+  width: 300px;
+  color: white;
+  border-radius: 24px;
+  box-shadow: rgba(0, 0, 0, 0.29) 0px 0px 10px 1px;
+  padding: 5px;
+  font-size: xx-large;
+  justify-content: center;
+  align-items: center;
+  min-height: 400px;
+
+  &:nth-child(1) {
+    background: #5d34f2;
+    background-image: url("https://rdmwatches.it/wp-content/uploads/2026/03/WhatsApp-Image-2026-02-12-at-14.03.26-6-1152x1536.jpeg");
+    background-size: cover;
+    background-position: center;
+  }
+
+  &:nth-child(2) {
+    background: #5d34f2;
+    background-image: url("https://rdmwatches.it/wp-content/uploads/2026/03/WhatsApp-Image-2026-02-12-at-15.22.50-1-1152x1536.jpeg");
+    background-size: cover;
+    background-position: center;
+  }
+
+  &:nth-child(3) {
+    background: #4300da;
+    background-image: url("https://rdmwatches.it/wp-content/uploads/2026/03/WhatsApp-Image-2026-03-18-at-17.26.02-4-1152x1536.jpeg");
+    background-size: cover;
+    background-position: center;
+  }
+
+  &:nth-child(4) {
+    background: #4300da;
+    background-image: url("https://rdmwatches.it/wp-content/uploads/2026/03/WhatsApp-Image-2026-02-18-at-13.33.26-1-1152x1536.jpeg");
+    background-size: cover;
+    background-position: center;
+  }
+
+  &:nth-child(5) {
+    background: #4300da;
+    background-image: url("https://rdmwatches.it/wp-content/uploads/2024/04/WhatsApp-Image-2024-05-13-at-16.34.21-1-1229x1536.jpeg");
+    background-size: cover;
+    background-position: center;
+  }
+
+  &:nth-child(6) {
+    background: #4300da;
+    background-image: url("https://rdmwatches.it/wp-content/uploads/2024/06/WhatsApp-Image-2024-06-17-at-15.13.55-1-1229x1536.jpeg");
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+.group {
+  display: flex;
+  gap: 20px;
+  will-change: transform;
+  animation: scrolling 25s linear infinite;
+}
+
+@keyframes scrolling {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes enter-div-description {
+  0% {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* CSS del componente Footer */
+
+#container-footer {
+  /* position: fixed; */
+  display: flex;
+  justify-content: center;
+  margin-top: auto;
+  color: white;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  backdrop-filter: blur(10px);
+  background: rgb(0, 0, 0);
+  padding: 2em;
+  z-index: 999;
+}
+
+#div-info-footer {
+  display: flex;
+  width: 100%;
+  gap: 1em;
+  justify-content: center;
+  align-items: center;
+  /* font-family: "Playfair Display", serif; */
+}
+
+#div-img-logo-footer {
+  left: 30px;
+}
+
+/* CSS del componente CookieBanner */
+
+@keyframes slideUpCookie {
+  0% {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+#container-cookie-banner {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 2em;
+  backdrop-filter: blur(15px);
+  background: rgba(0, 0, 0, 0.85);
+  border-top: 1px solid rgba(255, 255, 255, 0.407);
+  box-shadow: 0px -5px 20px rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+  animation: slideUpCookie 0.5s ease-in-out;
+}
+
+#row-cookie-banner {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+#cookie-title {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 1.8em;
+  letter-spacing: 1px;
+  margin-bottom: 0.5em;
+}
+
+#cookie-text {
+  font-family: "Playfair Display", serif;
+  font-size: 0.95em;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.85);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+#cookie-buttons {
+  margin-top: 1em;
+}
+
+.btn-cookie-accept,
+.btn-cookie-reject {
+  padding: 0.7em 1.8em;
+  border-radius: 25px;
+  border: 1px solid rgba(255, 255, 255, 0.407);
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 1em;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  letter-spacing: 0.5px;
+  min-width: 140px;
+}
+
+.btn-cookie-accept {
+  background: linear-gradient(135deg, #d4af37, #e5c158);
+  color: #000;
+  box-shadow: 0px 0px 15px rgba(212, 175, 55, 0.4);
+
+  &:hover {
+    background: linear-gradient(135deg, #e5c158, #d4af37);
+    box-shadow: 0px 0px 25px rgba(212, 175, 55, 0.6);
+    transform: translateY(-2px);
+    transition: all 0.3s ease-in-out;
+  }
+
+  &:active {
+    transform: translateY(0);
+  }
+}
+
+.btn-cookie-reject {
+  background-color: rgba(255, 255, 255, 0.15);
+  color: white;
+  border-color: rgba(255, 255, 255, 0.5);
+
+  &:hover {
+    background-color: rgba(255, 255, 255, 0.25);
+    border-color: rgba(255, 255, 255, 0.7);
+    transform: translateY(-2px);
+    transition: all 0.3s ease-in-out;
+  }
+
+  &:active {
+    transform: translateY(0);
+  }
+}
