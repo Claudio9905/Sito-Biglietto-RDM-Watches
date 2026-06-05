@@ -17,7 +17,7 @@ Inoltre, sono presenti alcuni caroselli, prendendo come modelli di esempio quell
 
 # Codice QR code per la scansione
 
-<img width="255" height="270" alt="qr-code-rdm" src="https://github.com/user-attachments/assets/64d89fca-e2a4-41f7-9453-0f62fa62fba8" />
+<img width="255" height="270" alt="qr-code-rdm" src="https://github.com/user-attachments/assets/cae3dedf-7ca9-4566-89ee-6045d28b3f6e" />
 
 
 # Tecnologie e linguaggi usati nel lato Front-End:
