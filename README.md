@@ -4,17 +4,20 @@ in modo da avere sempre, a portata di mano, il contatto con l'azienda.
 
 # Struttura
 L'app presente principalmemnte i contatti, tra link del sito principale dell'azienda, link dei social, link di Google Maps per la posizione GPS
+
 <img width="437" height="813" alt="Screenshot 2026-06-05 150803" src="https://github.com/user-attachments/assets/872d43b0-22bc-49c3-85fa-28831f2b2fc6" />
 <img width="427" height="814" alt="Screenshot 2026-06-05 150814" src="https://github.com/user-attachments/assets/64f0c8af-2497-45fd-b5c8-06495f80a2d7" />
 <img width="447" height="810" alt="Screenshot 2026-06-05 150821" src="https://github.com/user-attachments/assets/43c8b1a9-0a74-49d1-940c-a3ec9804f450" />
 <img width="427" height="804" alt="Screenshot 2026-06-05 150830" src="https://github.com/user-attachments/assets/9258dbb8-629c-48f9-b29b-20236ff96e25" />
 
 Inoltre, sono presenti alcuni caroselli, prendendo come modelli di esempio quelli sul sito di React-Boostrap (https://react-bootstrap.github.io/)
+
 <img width="363" height="693" alt="Screenshot 2026-06-05 150950" src="https://github.com/user-attachments/assets/27d61a40-6b6b-4df9-9267-06576dce2be9" />
 <img width="362" height="669" alt="Screenshot 2026-06-05 151000" src="https://github.com/user-attachments/assets/ddc31757-b821-42fd-a694-30b9d4e583d4" />
 
 # Codice QR code per la scansione
-<img width="2257" height="2257" alt="qr-code-rdm" src="https://github.com/user-attachments/assets/64d89fca-e2a4-41f7-9453-0f62fa62fba8" />
+
+<img width="255" height="270" alt="qr-code-rdm" src="https://github.com/user-attachments/assets/64d89fca-e2a4-41f7-9453-0f62fa62fba8" />
 
 
 # Tecnologie e linguaggi usati nel lato Front-End:
